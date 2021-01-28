@@ -48,7 +48,7 @@ private MatchService matchService;
 	public Match updateMatch( @PathVariable Integer id , @RequestBody Match match) {
 		return matchService.update(match);
 	}
-	@DeleteMapping
+	@DeleteMapping ("/{id}")
 	public void deleteMatch(@PathVariable Integer id) {
 		matchService.delete(id);
 	}
