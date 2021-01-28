@@ -33,6 +33,7 @@ public class PlayerController {
 	
 	@PostMapping
 	public Player addPlayer(@RequestBody Player player) {
+		System.out.println(player);
 		return playerService.add(player);
 	}
 	
